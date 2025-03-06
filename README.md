@@ -26,7 +26,7 @@ O código utiliza as seguintes bibliotecas:
 `datetime:` Manipulação de datas e horas.
 
 
-## ✔️ Técnicas e tecnologias utilizadas
+## ✔️ Tecnologia utilizada
 
 `Python`: Linguagem de programação utilizada para desenvolver a lógica.
 
