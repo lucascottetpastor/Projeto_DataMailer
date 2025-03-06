@@ -44,6 +44,6 @@ Para executar o projeto, você deve:
 3. Adcionar um arquivo Excel contendo os dados em: `arquivo_excel = r"Caminho\Arquivo\Excel"`
 
 
-## 📷 Exemplo:
+## 📷 Exemplo: *Dados fictícios criados por IA*
 
 ![Exemplo de uso](./Exemplo_de_uso.png)
