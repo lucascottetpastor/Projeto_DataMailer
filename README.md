@@ -46,4 +46,4 @@ Para executar o projeto, você deve:
 
 ## 📷 Exemplo:
 
-![Template com os dados](URL_da_Imagem)
+![Exemplo de uso](./Exemplo_de_uso.png)
