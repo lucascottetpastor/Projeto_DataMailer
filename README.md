@@ -47,4 +47,5 @@ Para executar o projeto, você deve:
 ## 📷 Exemplo:
 
 ![Exemplo de uso](./Exemplo_de_uso.png)
+
 <sub>*Dados fictícios criados por IA* </sub>
