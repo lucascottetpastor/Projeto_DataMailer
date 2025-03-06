@@ -32,8 +32,9 @@ O código utiliza as seguintes bibliotecas:
 
 ## 🛠️ Abrir e rodar o projeto
 
-Baixar e instalar a versão mais recente do Python em: [DOWNLOAD PYTHON](https://www.python.org/downloads/);
-Necessário fazer a instalação de todas as dependências;
+Baixar e instalar a versão mais recente do Python em: [download](https://www.python.org/downloads/).
+
+Necessário fazer a instalação de todas as dependências.
 
 Para executar o projeto, você deve:
 1. Adcionar um Template em `template_path = r"Caminho\Do\Template\Fundo"`
