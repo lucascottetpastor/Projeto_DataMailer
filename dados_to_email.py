@@ -11,9 +11,9 @@ from email.mime.text import MIMEText
 from email import encoders
 from datetime import datetime
 
-template_path = r"C:\Users\lucas\OneDrive\Área de Trabalho\AUTOMACAO EMAIL PDF\TEMPLATE.png"
-roboto_bold_path = r"C:\Users\lucas\OneDrive\Área de Trabalho\AUTOMACAO EMAIL PDF\Roboto-Bold.ttf"
-arquivo_excel = r"C:\Users\lucas\OneDrive\Área de Trabalho\AUTOMACAO EMAIL PDF\relatorio.xlsx"
+template_path = r"Caminho\Do\Template\Fundo"
+roboto_bold_path = r"Caminho\Fonte\Roboto"
+arquivo_excel = r"Caminho\Arquivo\Excel"
 
 pdfmetrics.registerFont(TTFont("Roboto-Bold", roboto_bold_path))
 
@@ -150,33 +150,21 @@ def gerar_pdf_com_template():
 
 
 nome_cliente = dados["nome_projeto"]
-user_exibicao = 'Training Analytics'
-user = 'no-reply@traininganalytics.com.br'
-password = 'TRN@036!961Tas@EA'
-destinatario = 'lucas.cottet@zoomeducacaocorporativa.com.br'
-assunto = f'Resumo Semanal {nome_cliente}'
-corpo = f'''
+user_exibicao = 'NOME DO USUARIO'
+user = 'E-MAIL PARA ENVIO'
+password = 'SENHA DO E-MAIL PARA ENVIO' #Senha de APP
+destinatario = 'E-MAIL DO DESTINATÁRIO'
+assunto = f'ASSUNTO DO E-MAIL'
+corpo = f''' 
 <!DOCTYPE html>
 <html>
     <p>Olá!</p> 
     <p>Espero que esteja bem.</p> 
-
-
-    <p>Seu infográfico semanal {nome_cliente} chegou com tudo organizado para facilitar o acompanhamento trazendo:</p> 
-    <ul> 
-        <li><span class="emoji">📊</span> Indicadores essenciais para monitorar o desempenho da sua equipe.</li> 
-        <li><span class="emoji">🖼️</span> Dados claros e visuais, perfeitos para apresnetar em suas reuniões.</li> 
-        <li><span class="emoji">🚀</span> Informações estratégicas, te ajudando para tomar decisões rápidas e certeiras.</li> 
-    </ul> 
-    <p>Comece a semana bem informado e no controle do seu projeto! 😉</p> 
-
-    <p>Até semana que vem!</p> 
-
-    <p>Ah, sempre chegamos na sua caixa de entrada toda segunda-feira por volta das 08h.</p> 
-    <i style='font-size: smaller;'>Só lembrando que alguns servidores de e-mail são teimosos e atrasam... Outros são piores ainda e nos jogam para o spam e/ou lixeira eletrônica. Sempre que não nos encontrar na caixa de entrada, procure nessas duas pastas e nos marque como e-mail confiável.</i>
+    
+    <p> Desenvolvido por Lucas Cottet Pastor </p>
 </html>'''
 data_nome_anexo = datetime.now().strftime("%d.%m.%Y")
-nome_arquivo_anexo = f'Resumo semanal {data_nome_anexo}.pdf'
+nome_arquivo_anexo = f'Resumo {data_nome_anexo}.pdf'
 
 def enviar_email(destinatario, assunto, corpo, anexo_bytes, nome_arquivo_anexo, user, password):
     msg = MIMEMultipart()
@@ -191,7 +179,7 @@ def enviar_email(destinatario, assunto, corpo, anexo_bytes, nome_arquivo_anexo, 
     part.add_header('Content-Disposition', f'attachment; filename={nome_arquivo_anexo}')
     msg.attach(part)
 
-    server = smtplib.SMTP('pop.traininganalytics.com.br', 587)
+    server = smtplib.SMTP('smtp.gmail.com', 587) #SMTP para Gmail.
     server.set_debuglevel(0)
     server.login(user, password)
     server.sendmail(user, destinatario, msg.as_string())
