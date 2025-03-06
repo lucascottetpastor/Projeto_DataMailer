@@ -1,5 +1,7 @@
 # DataMailer - Insights por E-mail
 
+Este projeto foi desenvolvido para **[Zoom Educação Corporativa](https://www.zoomeducacaocorporativa.com.br/)**
+
 Este script automatiza a geração de relatórios semanais, contendo informações calculadas a partir de dados em um arquivo Excel, e realiza três funções principais:
 
 1. Processamento de Dados: Leitura e cálculo de métricas detalhadas.
