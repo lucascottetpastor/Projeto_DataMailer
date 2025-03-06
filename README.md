@@ -17,9 +17,9 @@ O código utiliza as seguintes bibliotecas:
 
 `pandas:` Para manipulação e análise dos dados do arquivo Excel.
 
-` reportlab?` Para geração de PDFs com layouts customizados.
+`reportlab?` Para geração de PDFs com layouts customizados.
 
-` smtplib e email.mime:` Para envio de e-mails com anexos.
+`smtplib e email.mime:` Para envio de e-mails com anexos.
 
 `io:` Manipulação de fluxos de dados em memória.
 
