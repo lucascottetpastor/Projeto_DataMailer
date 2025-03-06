@@ -42,3 +42,8 @@ Para executar o projeto, você deve:
 2. Adcionar uma Fonte de preferência Roboto em: `roboto_bold_path = r"Caminho\Fonte\Roboto"`
 
 3. Adcionar um arquivo Excel contendo os dados em: `arquivo_excel = r"Caminho\Arquivo\Excel"`
+
+
+## 📷 Exemplo:
+
+![Template com os dados](URL_da_Imagem)
