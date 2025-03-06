@@ -1,4 +1,4 @@
-# Analise de Dados com envio automatico
+# DataMailer - Insights por E-mail
 
 Este script automatiza a geração de relatórios semanais, contendo informações calculadas a partir de dados em um arquivo Excel, e realiza três funções principais:
 
